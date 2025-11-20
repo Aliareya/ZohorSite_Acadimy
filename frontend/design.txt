@@ -1,0 +1,85 @@
+src
+ ├─ app
+ │   ├─ App.tsx
+ │   ├─ main.tsx
+ │   ├─ routes
+ │   │    └─ AppRouter.tsx
+ │   └─ providers
+ │        ├─ AuthProvider.tsx
+ │        ├─ ThemeProvider.tsx
+ │        └─ QueryProvider.tsx
+ │
+ ├─ shared
+ │   ├─ components
+ │   │    ├─ Button.tsx
+ │   │    ├─ Input.tsx
+ │   │    ├─ Modal.tsx
+ │   │    └─ Spinner.tsx
+ │   ├─ hooks
+ │   │    ├─ useDebounce.ts
+ │   │    ├─ useTheme.ts
+ │   │    └─ useLocalStorage.ts
+ │   ├─ lib
+ │   │    ├─ axios
+ │   │    │    └─ axiosClient.ts
+ │   │    ├─ constants.ts
+ │   │    └─ helpers.ts
+ │   ├─ types
+ │   │    └─ global.ts
+ │   └─ ui
+ │        ├─ Card.tsx
+ │        └─ Alert.tsx
+ │
+ ├─ features
+ │   ├─ auth
+ │   │    ├─ api
+ │   │    │    ├─ login.ts
+ │   │    │    └─ register.ts
+ │   │    ├─ components
+ │   │    │    ├─ LoginForm.tsx
+ │   │    │    └─ RegisterForm.tsx
+ │   │    ├─ hooks
+ │   │    │    ├─ useLogin.ts
+ │   │    │    └─ useRegister.ts
+ │   │    ├─ pages
+ │   │    │    ├─ LoginPage.tsx
+ │   │    │    └─ RegisterPage.tsx
+ │   │    └─ types
+ │   │         └─ auth.types.ts
+ │
+ │   └─ courses
+ │        ├─ api
+ │        │    ├─ getCourses.ts
+ │        │    └─ getCourseDetails.ts
+ │        ├─ components
+ │        │    ├─ CourseCard.tsx
+ │        │    └─ CourseFilter.tsx
+ │        ├─ hooks
+ │        │    ├─ useCourses.ts
+ │        │    └─ useCourseDetail.ts
+ │        ├─ pages
+ │        │    ├─ CoursesPage.tsx
+ │        │    └─ CourseDetailPage.tsx
+ │        └─ types
+ │             └─ course.types.ts
+ │
+ ├─ layouts
+ │   ├─ MainLayout.tsx
+ │   └─ DashboardLayout.tsx
+ │
+ ├─ assets
+ │   ├─ images
+ │   └─ icons
+ │
+ └─ styles
+      ├─ globals.css
+      └─ tailwind.css
+
+index.html
+vite.config.ts
+tsconfig.json
+package.json
+
+
+
+explian this  and tell me why use it to frasi
