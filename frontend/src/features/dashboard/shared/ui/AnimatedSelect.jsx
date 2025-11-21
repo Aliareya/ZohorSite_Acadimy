@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 
-export default function AnimatedSelect({selected , setSelected , options}) {
+export default function AnimatedSelect({selected , setSelected , options , page=null}) {
   const [open, setOpen] = useState(false);
   
   return (
-    <div className="relative w-56">
+    <div className={`${page === "attendance" ? "w-48" : "w-56"} relative `}>
       {/* Select Box */}
       <button
         onClick={() => setOpen(!open)}

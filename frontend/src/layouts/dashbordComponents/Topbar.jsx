@@ -6,7 +6,7 @@ function Topbar() {
 
 
   return (
-    <div class="w-full flex h-16 bg-[#d1e2e2]  ">
+    <div className="w-full flex h-16 bg-[#d1e2e2]  ">
       <div className="w-1/2  h-16 flex justify-start items-center ">
         {/* {showSidebar ? 
            (

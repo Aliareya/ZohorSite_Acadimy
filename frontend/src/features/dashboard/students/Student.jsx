@@ -114,9 +114,9 @@ function Student() {
             {/* Student List */}
             <div className={`${isGride? "flex flex-wrap" : ""} space-y-4 justify-between items-center`}>
               
-              {paginatedStudents.map((item) => (
+              {paginatedStudents.map((item , index) => (
                 isGride ? (
-                  <StudentBoxCart item={item}/>
+                  <StudentBoxCart item={item} key={index}/>
                 ):(
                   <StudentCart
                     key={item.id}

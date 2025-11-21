@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import AnimatedSelect from "../ui/AnimatedSelect";
 
-function Searchcomponent({handleSearch , selectFilter , setSelectFilter , filters}) {
+function Searchcomponent({handleSearch , selectFilter , setSelectFilter , filters , page=null , secounfiletr=null , secounSelect=null , secoundFiltershow=null}) {
   return (
     <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center ">
       <div className="flex-1">
@@ -23,7 +23,10 @@ function Searchcomponent({handleSearch , selectFilter , setSelectFilter , filter
           />
         </div>
       </div>
-      <AnimatedSelect selected={selectFilter}  setSelected={setSelectFilter}  options={filters}/>
+      <AnimatedSelect selected={selectFilter}  setSelected={setSelectFilter}  options={filters} page={"attendance"}/>
+      {page === "attendance" &&(
+        <AnimatedSelect selected={secoundFiltershow}  setSelected={secounSelect}  options={secounfiletr} page={"attendance"}/>
+      )}
     </div>
   );
 }

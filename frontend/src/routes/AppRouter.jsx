@@ -5,6 +5,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 import Home from "../features/dashboard/home/Home";
 import Student from "../features/dashboard/students/Student";
 import Teacher from "../features/dashboard/teacher/Teacher";
+import Attendance from "../features/dashboard/attendence/Attendance";
 
 function AppRouter() {
   return (
@@ -22,7 +23,7 @@ function AppRouter() {
           <Route index element={<Home/>} />
           <Route path="students" element={<Student/>} />
           <Route path="teachers" element={<Teacher/>} />
-          <Route path="attendance" element={<h1>dashboard attendance</h1>} />
+          <Route path="attendance" element={<Attendance/>} />
           <Route path="addstudent" element={<h1>dashboard addstudent</h1>} />
           <Route path="addteacher" element={<h1>dashboard addteacher</h1>} />
           <Route path="porfile" element={<h1>dashboard porfile</h1>} />
