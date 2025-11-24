@@ -6,6 +6,9 @@ import Home from "../features/dashboard/home/Home";
 import Student from "../features/dashboard/students/Student";
 import Teacher from "../features/dashboard/teacher/Teacher";
 import Attendance from "../features/dashboard/attendence/Attendance";
+import AddStudent from "../features/dashboard/addStudent/AddStudent";
+import AddTeacher from "../features/dashboard/addTeacher/AddTeacher";
+import Profile from "../features/dashboard/profile/Profile";
 
 function AppRouter() {
   return (
@@ -24,9 +27,9 @@ function AppRouter() {
           <Route path="students" element={<Student/>} />
           <Route path="teachers" element={<Teacher/>} />
           <Route path="attendance" element={<Attendance/>} />
-          <Route path="addstudent" element={<h1>dashboard addstudent</h1>} />
-          <Route path="addteacher" element={<h1>dashboard addteacher</h1>} />
-          <Route path="porfile" element={<h1>dashboard porfile</h1>} />
+          <Route path="addstudent" element={<AddStudent/>} />
+          <Route path="addteacher" element={<AddTeacher/>} />
+          <Route path="porfile" element={<Profile/>} />
           <Route path="roles" element={<h1>dashboard roles</h1>} />
           <Route path="setting" element={<h1>dashboard setting</h1>} />
         </Route>

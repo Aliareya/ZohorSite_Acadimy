@@ -14,7 +14,7 @@ function AttendanceCard({ attendance }) {
               {attendance.name}
             </h3>
             <span
-              className={`bg-white  ${
+              className={`bg-white text-black  ${
                 attendance?.attendanceStatus === "Present"
                   ? "text-green-900"
                   : attendance?.attendanceStatus === "Late"
