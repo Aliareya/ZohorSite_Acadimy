@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import ProfileHeader from "./component/ProfileHeader";
 import { Icon } from "@iconify/react";
 import General from "./General";
+import Security from "./Security";
+import Privicy from "./Privicy";
+
 
 function Profile() {
   const [profilePage, setProfilePage] = useState("General");
@@ -14,7 +17,9 @@ function Profile() {
       </div>
       <ProfileHeader options={opti}  page={profilePage} setPage={setProfilePage} />
       <div className="w-full h-auto] bg-[#d1e2e2] shadow-md border rounded-md border-[#9ca3af4d] mt-5">
-        <General/>
+        {profilePage === "General" ? (<General/>):profilePage ==="Security" ? (<Security/>):
+         (<Privicy/>)
+        }
       </div>
     </div>
   );
